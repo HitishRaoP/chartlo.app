@@ -1,0 +1,26 @@
+{
+  "name": "@chartlo.app/backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check-types": "tsc --pretty --noEmit",
+    "dev": "tsx watch src/index.ts",
+    "build": "rm -rf ./dist && tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "picocolors": "^1.0.1",
+    "tsx": "^4.17.0"
+  }
+}
