@@ -1,5 +1,5 @@
 {
-  "name": "chartlo.app",
+  "name": "chartloapp",
   "version": "1.0.0",
   "description": "",
   "private": "true",
@@ -21,7 +21,8 @@
     "husky": "^8.0.0",
     "lint-staged": "^15.2.9",
     "prettier": "^3.3.3",
-    "turbo": "^2.0.14"
+    "turbo": "^2.0.14",
+    "typescript": "^5.5.4"
   },
   "packageManager": "pnpm@9.7.1"
 }

@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import '@chartloapp/ui/src/index.css';
+import { Toaster } from 'react-hot-toast';
+import { ThemeProvider } from '@chartloapp/ui';
+import { StoreProvider } from '@chartloapp/state';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +19,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <StoreProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <main className="container container-2xl mx-auto">
+              <Toaster />
+              {children}
+            </main>
+          </ThemeProvider>
+        </StoreProvider>
+      </body>
     </html>
   );
 }

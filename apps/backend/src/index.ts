@@ -1,9 +1,10 @@
-require('dotenv').config();
 import express from 'express';
 import cors from 'cors';
 import { PORT } from './constants';
 import { yellow } from 'picocolors';
+import { config } from 'dotenv';
 
+config();
 const app = express();
 
 app.use(express.json());
