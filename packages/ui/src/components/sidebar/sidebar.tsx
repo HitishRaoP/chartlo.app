@@ -1,30 +1,27 @@
 'use client';
 import { Card, CardContent } from '../card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../tabs';
-import { FaTable } from 'react-icons/fa';
-import { HiMiniAdjustmentsVertical } from 'react-icons/hi2';
-import { CiExport } from 'react-icons/ci';
 import { UploadButton } from '../upload-button';
-import { CiImport } from 'react-icons/ci';
 import { Tools } from '../tools';
+import { CloudDownload, Settings, Plus, Grid2X2 } from 'lucide-react';
 import { ColumnNames } from '../column-names';
 
 const triggers = [
   {
     name: 'import',
-    icon: <CiImport className="w-4 h-4" />,
+    icon: <Plus className="w-[1.1rem] h-[1.1rem]" />,
   },
   {
     name: 'table',
-    icon: <FaTable className="w-4 h-4" />,
+    icon: <Grid2X2 className="w-[1.1rem] h-[1.1rem]" />,
   },
   {
     name: 'adjustments',
-    icon: <HiMiniAdjustmentsVertical className="w-4 h-4" />,
+    icon: <Settings className="w-[1.1rem] h-[1.1rem]" />,
   },
   {
     name: 'export',
-    icon: <CiExport className="w-4 h-4" />,
+    icon: <CloudDownload className="w-[1.1rem] h-[1.1rem]" />,
   },
 ];
 

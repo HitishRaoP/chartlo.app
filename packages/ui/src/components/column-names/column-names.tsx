@@ -61,7 +61,7 @@ export const ColumnNames = () => {
               </div>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <button className="dark:hover:bg-neutral-700 hover:bg-neutral-200 rounded-full">
+                  <button className="dark:hover:bg-neutral-700 hover:bg-neutral-200 rounded-sm">
                     <BsThreeDotsVertical />
                   </button>
                 </DropdownMenuTrigger>

@@ -1,8 +1,7 @@
 'use client';
 import { DataTable } from '../components/data-table';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/tabs';
-import { FaChartSimple } from 'react-icons/fa6';
-import { FaDatabase } from 'react-icons/fa';
+import { ChartBarBig, Database } from 'lucide-react';
 import { useColumns, useChart } from '@chartloapp/hooks';
 import { RootState } from '@chartloapp/state';
 import { Registry } from '../registry';
@@ -12,11 +11,11 @@ import { Sidebar } from '../components/sidebar';
 const triggers = [
   {
     name: 'chart',
-    icon: <FaChartSimple className="w-4 h-4" />,
+    icon: <ChartBarBig className="w-[1.1rem] h-[1.1rem]" />,
   },
   {
     name: 'data',
-    icon: <FaDatabase className="w-4 h-4" />,
+    icon: <Database className="w-[1.1rem] h-[1.1rem]" />,
   },
 ];
 
